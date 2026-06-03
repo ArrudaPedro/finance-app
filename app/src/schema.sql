@@ -1,0 +1,12 @@
+-- Active: 1777955439770@@localhost@5432@postgres
+CREATE TABLE IF NOT EXISTS expenses(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    value INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS revenue(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    value INT NOT NULL
+);
